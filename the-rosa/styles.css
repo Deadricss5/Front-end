@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Cabin|Herr+Von+Muellerhoff|Source+Sans+Pro:400,900&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Cabin|Herr+Von+Muellerhoff|Source+Sans+Pro:400,900&display=swap");
 
 /*Global styles*/
 *,
@@ -10,9 +10,9 @@
 }
 
 :root {
-    --main-font: 'Source Sans Pro', sans-serif;
-    --secondary-font: 'Herr Von Muellerhoff', cursive;
-    --body-font: 'Cabin', sans-serif;
+    --main-font: "Source Sans Pro", sans-serif;
+    --secondary-font: "Herr Von Muellerhoff", cursive;
+    --body-font: "Cabin", sans-serif;
     --main-font-color-dark: #252525;
     --secondary-font-color: #c59d5f;
     --body-font-color: #515151;
@@ -56,7 +56,7 @@ header {
     top: 0;
     left: 0;
     z-index: 1;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .5), transparent);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent);
 }
 
 .nav {
@@ -95,17 +95,17 @@ header {
     justify-content: space-around;
     z-index: 1250;
     transform: translateX(-100%);
-    transition: transform .5s;
+    transition: transform 0.5s;
 }
 
 .nav::before {
-    content: '';
+    content: "";
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, .8);
+    background-color: rgba(0, 0, 0, 0.8);
     z-index: 1000;
     opacity: 0;
     transform: scale(0);
@@ -130,7 +130,7 @@ header {
 }
 
 .nav-item {
-    border-bottom: solid rgba(255, 255, 255, .3);
+    border-bottom: solid rgba(255, 255, 255, 0.3);
 }
 
 .nav-link {
@@ -140,7 +140,7 @@ header {
     font-size: 1.6rem;
     letter-spacing: 2px;
     margin-left: -2px;
-    transition: color .3s;
+    transition: color 0.3s;
 }
 
 .nav-link:hover {
@@ -149,11 +149,10 @@ header {
 
 /* Hero */
 
-
 .hero {
     width: 100%;
     height: 100vh;
-    background: url('/images/hero.jpg') center no-repeat;
+    background: url("/images/hero.jpg") center no-repeat;
     background-size: cover;
     display: flex;
     align-items: center;
@@ -165,9 +164,8 @@ header {
     font-family: var(--secondary-font);
     color: var(--secondary-font-color);
     font-weight: 100;
-    line-height: .4;
+    line-height: 0.4;
     letter-spacing: 2px;
-
 }
 
 .first-letter {
@@ -181,8 +179,8 @@ header {
     font-family: var(--main-font);
     text-transform: uppercase;
     font-weight: 900;
-    letter-spacing: .5rem;
-    margin-right: -.5;
+    letter-spacing: 0.5rem;
+    margin-right: -0.5;
 }
 
 .separator {
@@ -191,23 +189,21 @@ header {
     justify-content: center;
 }
 
-
-
 .line {
     width: 100%;
     max-width: 8.4rem;
-    height: .25rem;
+    height: 0.25rem;
     background-color: #fff;
     position: relative;
 }
 
 .line-right::before,
 .line-left::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    border: .6rem solid transparent;
+    border: 0.6rem solid transparent;
 }
 
 .line-right::before {
@@ -246,10 +242,10 @@ header {
 .cta-btn {
     font-size: 1.1rem;
     background-color: #fff;
-    padding: .9rem 1.8rem;
+    padding: 0.9rem 1.8rem;
     color: var(--body-font-color);
-    border-radius: .4rem;
-    transition: background-color .5s;
+    border-radius: 0.4rem;
+    transition: background-color 0.5s;
 }
 
 .cta-btn:hover,
@@ -257,3 +253,5 @@ header {
     color: #fff;
     background-color: var(--secondary-font-color);
 }
+
+/* Discover our story */
